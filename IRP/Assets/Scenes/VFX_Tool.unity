@@ -5405,7 +5405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024078874d4d84bd19f97a3470cbd565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoke: 1
+  smoke: 0
   smokeMaterial: {fileID: 2100000, guid: 483794c6d2f4a4e1384d4d0af9d0d556, type: 2}
   curve:
     m_Mode: 1

@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class VFXTool : MonoBehaviour
 {
+    // Effect Selection
+    [Header("Effect Selection")]
     [SerializeField] private bool smoke;
+
     [SerializeField] private Material smokeMaterial;
     [SerializeField] private ParticleSystem.MinMaxCurve curve;
     private bool particleSystemCreated;
