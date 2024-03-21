@@ -14,6 +14,7 @@ TagManager:
   - Tab_8
   - Tab_9
   - Tab_10
+  - Tabs
   layers:
   - Default
   - TransparentFX
