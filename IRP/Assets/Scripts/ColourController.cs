@@ -16,6 +16,9 @@ public class ColourController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        colorPicker1.color = Color.red;
+        colorPicker2.color = Color.yellow;
+
         main = particleSystemInstance.main;
         minMaxGradient = main.startColor;
     }
