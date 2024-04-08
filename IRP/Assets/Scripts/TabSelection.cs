@@ -38,8 +38,6 @@ public class TabSelection : MonoBehaviour
 
         if (TabButtons.tabSelected != tabIndex)
             spriteRenderer.color = unselectedColour;
-        //else
-            //spriteRenderer.color = selectedColour;
     }
 
     private void OnMouseDown()

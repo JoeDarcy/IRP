@@ -19161,6 +19161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ping_SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 2069053916081618080, guid: f999dba44d6f249d2a946bb7ab92ea14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6604969511631109871, guid: f999dba44d6f249d2a946bb7ab92ea14,
         type: 3}
       propertyPath: m_Volume
@@ -19216,7 +19221,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8205457637419418925, guid: f999dba44d6f249d2a946bb7ab92ea14, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -39912,7 +39918,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 800, y: 450}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
