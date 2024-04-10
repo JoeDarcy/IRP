@@ -5770,7 +5770,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2014344996}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &112311329 stripped
 RectTransform:
@@ -6352,7 +6356,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 885678211}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &165675554 stripped
 RectTransform:
@@ -17850,7 +17858,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1049941248}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &585956559 stripped
 RectTransform:
@@ -18290,7 +18302,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1574283958}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &681912540 stripped
 RectTransform:
@@ -18839,7 +18855,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 950659181}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &738605013 stripped
 RectTransform:
@@ -18949,7 +18969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &751937612
 Transform:
   m_ObjectHideFlags: 0
@@ -20213,11 +20233,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &999950031 stripped
 RectTransform:
@@ -52657,7 +52673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1846711659
 Transform:
   m_ObjectHideFlags: 0
@@ -59031,7 +59047,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 122218443}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &2014567680 stripped
 RectTransform:
@@ -59408,6 +59428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083332802}
   - component: {fileID: 2083332801}
+  - component: {fileID: 2083332803}
   m_Layer: 0
   m_Name: Clip_Test
   m_TagString: Untagged
@@ -59433,20 +59454,20 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: https://youtu.be/yuOviY14K_Q?si=o_4SMnlFSsRXtjks
+  m_Url: 
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
-  m_WaitForFirstFrame: 1
+  m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
 --- !u!4 &2083332802
@@ -59464,6 +59485,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2014567680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2083332803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083332800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0223c647a22ef45d396fc34a298de751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoFileName: Clip_Test.mov
 --- !u!1 &2104533293
 GameObject:
   m_ObjectHideFlags: 0
@@ -60403,7 +60437,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8144241907504645273, guid: 4022332a8e96441be99f2b42c8b2e5d1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4022332a8e96441be99f2b42c8b2e5d1, type: 3}
 --- !u!224 &6837929197404901108 stripped
 RectTransform:
