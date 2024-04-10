@@ -10,7 +10,7 @@ public class MenuButtons : MonoBehaviour
 
     public void PlayButton()
     {
-
+        // Start main audio clip and unlocking tabs
     }
 
     public void CreditsButton()
