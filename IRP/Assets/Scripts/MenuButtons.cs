@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuButtons : MonoBehaviour
 {
     [SerializeField] private GameObject credits;
+    [SerializeField] private List<GameObject> tabs = new List<GameObject>();
 
     public void PlayButton()
     {
-        // Start main audio clip and unlocking tabs
+        tabs[1].SetActive(true);
+        tabs[0].SetActive(false);
     }
 
     public void CreditsButton()
