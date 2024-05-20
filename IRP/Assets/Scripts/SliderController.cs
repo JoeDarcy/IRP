@@ -11,22 +11,22 @@ public class SliderController : MonoBehaviour
     [SerializeField] private ParticleSystem particleSystemInstance;
 
     private ParticleSystem.MainModule main;
-    private MinMaxCurve startLifetime;
+    private MinMaxCurve startSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
         main = particleSystemInstance.main;
-        startLifetime = main.startLifetime;
+        startSpeed = main.startSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Create a new MinMaxCurve with the modified start lifetime
-        MinMaxCurve newStartLifetime = new MinMaxCurve(startLifetime.constantMin, slider.value);
+        // Create a new MinMaxCurve with the modified start speed
+        MinMaxCurve newStartSpeed = new MinMaxCurve(startSpeed.constantMin, slider.value);
 
-        // Assign the modified start lifetime to the particle system's main module
-        main.startLifetime = newStartLifetime;
+        // Assign the modified start speed to the particle system's main module
+        main.startSpeed = newStartSpeed;
     }
 }

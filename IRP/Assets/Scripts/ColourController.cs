@@ -12,6 +12,8 @@ public class ColourController : MonoBehaviour
 
     private MainModule main;
     private MinMaxGradient minMaxGradient;
+    private ParticleSystemRenderer particleSystemRenderer;
+    private Material material;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,9 @@ public class ColourController : MonoBehaviour
 
         main = particleSystemInstance.main;
         minMaxGradient = main.startColor;
+
+        particleSystemRenderer = particleSystemInstance.GetComponent<ParticleSystemRenderer>();
+        material = particleSystemRenderer.material;
     }
 
     // Update is called once per frame
@@ -30,5 +35,7 @@ public class ColourController : MonoBehaviour
         minMaxGradient.colorMax = colorPicker2.color;
 
         main.startColor = minMaxGradient;
+
+        material.SetColor("_Colour", minMaxGradient.colorMin);
     }
 }

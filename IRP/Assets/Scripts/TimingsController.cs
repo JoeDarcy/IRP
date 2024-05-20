@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimingsController : MonoBehaviour
 {
@@ -14,23 +15,37 @@ public class TimingsController : MonoBehaviour
 
     [SerializeField] private float timerStart;
 
-    private float timer;
+    [SerializeField] private Slider sliderVFX_1;
+    [SerializeField] private Slider sliderVFX_2;
+    [SerializeField] private Slider sliderVFX_3;
 
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] private Toggle toggle;
+
+    private ParticleSystem.MainModule mainModule;
+
+    private void Update()
     {
-        timer= timerStart;
+        // Edit projectile spell speed
+        VFXMovement.moveSpeed = sliderVFX_2.value;
+        // Climax duration
+        ClimaxDuration.totalClimaxDuration = sliderVFX_3.value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TriggerParticleVFX()
     {
-        timer -= Time.deltaTime;
+        toggle.isOn = false;
 
-        if (timer <= 0)
-        {
-            VFX_5.SetActive(true);
-            VFX_6.SetActive(true);
-        }
+        ParticleSystem particleSystem = VFX_1.GetComponent<ParticleSystem>();
+        particleSystem.Stop();
+
+
+        // Set the duration of each VFX
+        mainModule = VFX_1.GetComponent<ParticleSystem>().main;
+        if (!VFX_1.GetComponent<ParticleSystem>().isPlaying)
+            mainModule.duration = sliderVFX_1.value;
+
+        // Trigger the VFX
+        particleSystem.Play();
     }
 }

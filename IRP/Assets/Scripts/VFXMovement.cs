@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VFXMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    public static float moveSpeed;
     public float startDelay;
 
 
@@ -12,6 +12,6 @@ public class VFXMovement : MonoBehaviour
     void Update()
     {
         if (transform.position.x <= 6.65f)
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            transform.Translate(moveSpeed * Time.deltaTime * Vector2.right);    
     }
 }
